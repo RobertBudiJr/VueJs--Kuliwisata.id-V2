@@ -11,38 +11,24 @@ $grid-breakpoints: (
 );
 
 // Color Variables
-$dark-purple: #8711c1;
-$purple: #b849ef;
-$light-purple: #ffddff;
+// Primary
+$p50: #edf2f4;
+$p75: #b6c8d0;
+$p100: #97b1bd;
+$p200: #6a8fa0;
+$p300: #4c788d;
+$p400: #355463;
+$p500: #2e4956;
 
-$dark-blue: #0344b7;
-$blue: #2472fc;
-$light-blue: #d6ffff;
-
-$dark-deep-blue: #023185;
-$deep-blue: #1b4a9e;
-$light-deep-blue: #4e7dd1;
-
-$black: #191f29;
-$grey: #989ea8;
-$subtext: #cfcfcf;
-$white: #ffffff;
-
-$dark-yellow: #b77603;
-$yellow: #fcae24;
-$light-yellow: #fffff0;
-
-$dark-red: #b72e03;
-$red: #fc5824;
-$light-red: #fff1ed;
-
-$dark-green: #03b79b;
-$green: #24fcda;
-$light-green: #24fc84;
-$lighter-green: #edfffc;
-
-// Gradient Variables
-$gradient-primary: linear-gradient(112.8deg, $dark-purple, $blue);
-$gradient-primary-text: linear-gradient(112.8deg, $dark-purple, $blue, $dark-purple);
-$gradient-primary-thin: linear-gradient(112.8deg, rgba(135, 17, 193, 0.3) -15.76%, rgba(36, 114, 252, 0.3) 102.86%, rgba(36, 114, 252, 0.3) 102.86%);
-$gradient-secondary: linear-gradient(52.37deg, $light-green, $green);
+// Neutral
+$ntr0: #ffffff;
+$ntr50: #e6e9ec;
+$ntr100: #b3b9c4;
+$ntr200: #8e98a8;
+$ntr300: #5a6880;
+$ntr400: #3a4b68;
+$ntr500: #091e42;
+$ntr600: #081b3c;
+$ntr700: #06152f;
+$ntr800: #051124;
+$ntr900: #040d1c;

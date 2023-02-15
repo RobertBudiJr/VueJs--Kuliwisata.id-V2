@@ -1,98 +1,55 @@
 .btn {
-  border-radius: toRem(10);
+  border-radius: toRem(8);
   text-decoration: none;
   border: none;
   transition: 0.2s;
-  font-family: 'Josefin Sans Bold';
+  font-family: 'Poppins Medium';
   text-align: center;
   text-transform: capitalize;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 4px;
 
   &--primary {
-    background: $blue;
-    color: $white;
+    background: $p300;
+    color: $ntr0;
     transition: 0.2s;
 
     &:hover,
     &:active {
-      color: $white;
-      background: $dark-blue;
+      color: $ntr0;
+      background: $p400;
     }
   }
 
   &--secondary {
-    position: relative;
-    transition: all 0.2s;
-
-    & > p {
-      color: transparent;
-      background: $gradient-primary;
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 10px;
-      border: 1px solid transparent;
-      background: $gradient-primary border-box;
-      -webkit-mask: linear-gradient($white 0 0) padding-box, linear-gradient($white 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-    }
+    border: solid 1px $p300;
+    color: $p300;
 
     &:hover {
-      border: none;
-      background: none;
-      background: $dark-blue;
-
-      p {
-        color: $white;
-      }
-
-      &::before {
-        inset: unset;
-      }
-
-      .btn__icon {
-        background-image: none;
-        background-color: $white;
-      }
+      border: solid 1px $p400;
+      color: $p400;
     }
   }
 
   &--tertiary {
-    color: $white;
-    border: 1px solid $white;
-
-    p {
-      color: $white;
-    }
+    color: $p300;
 
     &:hover {
-      border: 1px solid $dark-blue;
-
-      p {
-        color: $dark-blue;
-      }
+      color: $p400;
     }
   }
 
   &--lg {
-    padding: toRem(20) toRem(40);
+    padding: toRem(12) toRem(24);
   }
 
   &--md {
-    padding: toRem(16) toRem(32);
+    padding: toRem(10) toRem(24);
   }
 
   &--sm {
-    padding: toRem(12) toRem(24);
+    padding: toRem(8) toRem(24);
   }
 }
