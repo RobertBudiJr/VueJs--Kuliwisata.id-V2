@@ -1,23 +1,27 @@
-<script setup>
-import NavbarTop from '../components/NavbarTop.vue';
-</script>
+<script setup></script>
 
 <template>
+  <!-- Start Hero Section -->
   <section class="hero">
-    <navbar-top></navbar-top>
     <div class="container">
-      <h1>
-        Looking for
-        <div class="word-translate">
-          <span>Places?</span>
-          <span>Foods?</span>
-          <span>Drinks?</span>
-        </div>
-      </h1>
-      <input class="form-control me-2" type="search" placeholder="Pura Ulun" aria-label="Search" />
+      <!-- Hero Header -->
+      <div class="hero__header">
+        <h1>
+          Looking for
+          <div class="word-translate">
+            <span>Places?</span>
+            <span>Foods?</span>
+            <span>Drinks?</span>
+          </div>
+        </h1>
+      </div>
+      <!-- Hero Form -->
+      <div class="hero__form input-group mb-3"><input type="text" class="form-control" placeholder="Pura Ulun" aria-label="SearchBar" aria-describedby="searchButton" /><span id="searchButton" class="search"></span></div>
+      <!-- Gradient -->
       <div class="gradient-white"></div>
     </div>
   </section>
+  <!-- End Hero Section -->
 </template>
 
 <style lang="scss" scoped>
@@ -48,10 +52,74 @@ section.hero {
       background-image: linear-gradient(180deg, transparent, $ntr0);
     }
 
-    h1 {
-      color: $p50;
-      .word-translate {
+    .hero__header {
+      min-width: 625px;
+      h1 {
+        // text-align: center;
+        color: $p50;
         position: relative;
+        .word-translate {
+          color: $ntr500;
+          display: inline;
+          text-indent: toRem(10);
+
+          span {
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+            -webkit-animation: rotateWord 10s linear infinite 0s;
+            -ms-animation: rotateWord 10s linear infinite 0s;
+            animation: rotateWord 10s linear infinite 0s;
+
+            &:nth-child(2) {
+              -webkit-animation-delay: 3s;
+              -ms-animation-delay: 3s;
+              animation-delay: 3s;
+            }
+
+            &:nth-child(3) {
+              -webkit-animation-delay: 6s;
+              -ms-animation-delay: 6s;
+              animation-delay: 6s;
+            }
+          }
+        }
+      }
+    }
+
+    .hero__form {
+      max-width: 625px;
+      position: relative;
+      border-radius: toRem(8);
+      overflow: hidden;
+
+      .form-control {
+        padding: toRem(12) toRem(24);
+        padding-right: toRem(32);
+
+        &::placeholder {
+          color: $ntr100;
+        }
+      }
+
+      .search {
+        position: absolute;
+        // z-index: 1;
+        width: 24px;
+        height: 24px;
+        background-image: url(../assets/img/icons/search.svg);
+        background-size: cover;
+        right: 12px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+
+        // Override unecessary settings
+        .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+          margin-left: 0;
+          border-top-left-radius: none;
+          border-bottom-left-radius: none;
+        }
       }
     }
   }

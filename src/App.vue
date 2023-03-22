@@ -4,6 +4,7 @@ import HeroSection from './sections/HeroSection.vue';
 </script>
 
 <template>
+  <NavbarTop></NavbarTop>
   <HeroSection></HeroSection>
 </template>
 

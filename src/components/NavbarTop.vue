@@ -36,6 +36,7 @@
   padding: 0;
   height: 67px;
   background-color: unset !important;
+  margin-top: toRem(50);
 
   .navbar-brand {
     padding: 0;
