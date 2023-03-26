@@ -1,3 +1,5 @@
+<script setup></script>
+
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container container-fluid">
@@ -22,14 +24,19 @@
             <a class="nav-link btn btn--tertiary btn--lg" href="#">About Us</a>
           </li>
         </ul>
+        <form class="nav-btn nav-btn--mobile">
+          <button class="btn btn--secondary btn--lg" type="submit">Register</button>
+          <button class="btn btn--tertiary btn--lg" type="submit">Login</button>
+        </form>
       </div>
-      <form class="d-flex">
+      <form class="nav-btn nav-btn--desktop">
         <button class="btn btn--secondary btn--lg" type="submit">Register</button>
         <button class="btn btn--tertiary btn--lg" type="submit">Login</button>
       </form>
     </div>
   </nav>
 </template>
+
 <style lang="scss" scoped>
 @import '../assets/scss/styles.scss';
 .navbar {
@@ -37,32 +44,62 @@
   height: 67px;
   background-color: unset !important;
   margin-top: toRem(50);
+  z-index: 99;
 
   .navbar-brand {
     padding: 0;
     margin: 0;
   }
 
-  .navbar-nav {
-    gap: toRem(24);
+  .nav-btn {
+    display: flex;
+    gap: toRem(16);
 
-    .nav-item {
-      .nav-link {
-        padding: toRem(20);
-        color: $ntr100;
+    &--mobile {
+      display: none;
 
-        &:hover {
-          color: $p400;
-        }
+      @include media-breakpoint-down(lg) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: toRem(8);
 
-        &.active {
-          color: $p300;
+        & > * {
+          width: 100%;
         }
       }
     }
 
-    .d-flex {
-      gap: toRem(16);
+    &--desktop {
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    @include media-breakpoint-down(lg) {
+      background-color: $ntr0;
+      margin-inline: toRem(-20);
+      margin-top: toRem(4);
+      padding: toRem(16);
+    }
+    .navbar-nav {
+      gap: toRem(24);
+
+      .nav-item {
+        .nav-link {
+          padding: toRem(20);
+          color: $ntr100;
+
+          &:hover {
+            color: $p400;
+          }
+
+          &.active {
+            color: $p300;
+          }
+        }
+      }
     }
   }
 }

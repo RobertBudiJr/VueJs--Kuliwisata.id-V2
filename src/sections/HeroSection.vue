@@ -53,15 +53,23 @@ section.hero {
     }
 
     .hero__header {
-      min-width: 625px;
+      // align-self: center;
+      display: flex;
+      word-break: normal;
+      max-width: 625px;
+      width: inherit;
+      min-width: auto;
       h1 {
-        // text-align: center;
+        text-align: justify;
+        word-break: normal;
         color: $p50;
         position: relative;
+        width: inherit;
         .word-translate {
           color: $ntr500;
           display: inline;
           text-indent: toRem(10);
+          width: 260px;
 
           span {
             position: absolute;
