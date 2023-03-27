@@ -31,6 +31,11 @@
       border: solid 1px $p400;
       color: $p400;
     }
+
+    &:active {
+      color: $ntr0;
+      background: $p400;
+    }
   }
 
   &--tertiary {
@@ -38,6 +43,11 @@
 
     &:hover {
       color: $p400;
+    }
+
+    &:active {
+      color: $ntr0;
+      background: $p400;
     }
   }
 

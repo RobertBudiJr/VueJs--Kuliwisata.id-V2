@@ -66,12 +66,4 @@ h4 {
   @include media-breakpoint-down(sm) {
     padding-inline: toRem(20);
   }
-
-  // .header {
-  //   display: flex;
-  //   flex-direction: column;
-  //   gap: toRem(16);
-  //   text-align: center;
-  //   align-items: center;
-  // }
 }

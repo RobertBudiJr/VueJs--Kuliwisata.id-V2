@@ -53,12 +53,25 @@ section.hero {
     }
 
     .hero__header {
-      // align-self: center;
       display: flex;
       word-break: normal;
       max-width: 625px;
       width: inherit;
       min-width: auto;
+
+      @include media-breakpoint-down(md) {
+        padding-inline: toRem(106);
+        text-align: center;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-inline: 0;
+      }
+
+      @include media-breakpoint-down(xs-2) {
+        padding-right: toRem(170);
+      }
+
       h1 {
         text-align: justify;
         word-break: normal;
@@ -101,7 +114,16 @@ section.hero {
       border-radius: toRem(8);
       overflow: hidden;
 
+      @include media-breakpoint-down(md) {
+        padding-inline: toRem(4);
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-inline: 0;
+      }
+
       .form-control {
+        border-top-right-radius: toRem(8);
         padding: toRem(12) toRem(24);
         padding-right: toRem(32);
 

@@ -1,5 +1,4 @@
 <script setup>
-// defineProps(['headerProps', 'subHeaderProps', 'reverseProps']);
 defineProps({
   subHeaderProps: String,
   headerProps: String,
