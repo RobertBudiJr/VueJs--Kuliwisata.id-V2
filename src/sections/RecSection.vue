@@ -42,7 +42,7 @@ const cardList = ref([
       <!-- Header -->
       <HeaderTitle subHeaderProps="Recommendation" headerProps="Most Searched Places" />
       <!-- Content -->
-      <div class="row">
+      <div class="row g-1">
         <CardSearch v-for="items in cardList" v-bind:key="items.id" :badgeProps="items.badgeProps" :imgProps="items.imgProps" :titleProps="items.titleProps" :locateProps="items.locateProps"></CardSearch>
       </div>
     </div>
@@ -52,4 +52,13 @@ const cardList = ref([
 
 <style lang="scss" scoped>
 @import '../assets/scss/styles.scss';
+
+section.rec {
+  .row {
+    --bs-gutter-x: 28px;
+    --bs-gutter-y: 28px;
+    // align-items: center;
+    justify-content: center;
+  }
+}
 </style>
