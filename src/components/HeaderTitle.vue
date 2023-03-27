@@ -9,7 +9,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="header" v-if="reverseProps !== false">
+  <div class="header" v-if="reverseProps === false">
     <p class="text-xl text-xl--md">{{ subHeaderProps }}</p>
     <h3>{{ headerProps }}</h3>
   </div>

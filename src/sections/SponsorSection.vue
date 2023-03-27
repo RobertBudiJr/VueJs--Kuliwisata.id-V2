@@ -12,13 +12,12 @@ const sponsorList = ref([sponsor1, sponsor2, sponsor3, sponsor4]);
 <template>
   <!-- Start Sponsor Section -->
   <section class="sponsor">
-    <div class="container">
+    <div class="container container--gen">
       <!-- Header -->
       <HeaderTitle
         subHeaderProps="Sponsored"
         headerProps="We are Supported by
 Official Government Institutions"
-        reverseProps="true"
       />
       <!-- Content -->
       <div class="row gy-1 sponsor-list">
@@ -33,21 +32,12 @@ Official Government Institutions"
 @import '../assets/scss/styles.scss';
 
 section.sponsor {
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: toRem(32);
-    align-items: center;
-    justify-content: center;
-    padding: toRem(80) 0;
-
-    .sponsor-list {
-      width: 100%;
-      --bs-gutter-y: 24px;
-      & > * {
-        max-height: 80px;
-        height: auto;
-      }
+  .sponsor-list {
+    width: 100%;
+    --bs-gutter-y: 24px;
+    & > * {
+      max-height: 80px;
+      height: auto;
     }
   }
 }

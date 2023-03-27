@@ -66,4 +66,13 @@ h4 {
   @include media-breakpoint-down(sm) {
     padding-inline: toRem(20);
   }
+
+  &--gen {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(32);
+    align-items: center;
+    justify-content: center;
+    padding: toRem(80) 0;
+  }
 }
