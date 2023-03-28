@@ -74,9 +74,28 @@ h4 {
     align-items: center;
     justify-content: center;
     padding: toRem(80) 0;
+
+    @include media-breakpoint-down(sm) {
+      padding: toRem(64) 0;
+    }
   }
 }
 
 #app {
   background: $ntr0;
+}
+
+// Custom Class for Efficiency
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

@@ -3,7 +3,7 @@
 <template>
   <!-- Start Hero Section -->
   <section class="hero">
-    <div class="container">
+    <div class="container container--gen">
       <!-- Hero Header -->
       <div class="hero__header">
         <h1>
@@ -16,7 +16,7 @@
         </h1>
       </div>
       <!-- Hero Form -->
-      <div class="hero__form input-group mb-3"><input type="text" class="form-control" placeholder="Pura Ulun" aria-label="SearchBar" aria-describedby="searchButton" /><span id="searchButton" class="search"></span></div>
+      <div class="hero__form input-group mb-3"><input type="text" class="form-control form-control-lg" placeholder="Pura Ulun" aria-label="SearchBar" aria-describedby="searchButton" /><span id="searchButton" class="search"></span></div>
       <!-- Gradient -->
       <div class="gradient-white"></div>
     </div>
@@ -38,10 +38,6 @@ section.hero {
     overflow: hidden;
     border-radius: toRem(20);
     height: 583px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: toRem(16);
 
     .gradient-white {
@@ -126,6 +122,7 @@ section.hero {
         border-top-right-radius: toRem(8);
         padding: toRem(12) toRem(24);
         padding-right: toRem(32);
+        z-index: 1;
 
         &::placeholder {
           color: $ntr100;
@@ -134,7 +131,7 @@ section.hero {
 
       .search {
         position: absolute;
-        // z-index: 1;
+        z-index: 2;
         width: 24px;
         height: 24px;
         background-image: url(../assets/img/icons/search.svg);
@@ -143,6 +140,7 @@ section.hero {
         top: 0;
         bottom: 0;
         margin: auto 0;
+        cursor: pointer;
 
         // Override unecessary settings
         .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {

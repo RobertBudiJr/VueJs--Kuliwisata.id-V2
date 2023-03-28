@@ -20,7 +20,7 @@ const sponsorList = ref([sponsor1, sponsor2, sponsor3, sponsor4]);
 Official Government Institutions"
       />
       <!-- Content -->
-      <div class="row gy-1 sponsor-list">
+      <div class="row gy-1 sponsor__content">
         <img class="col-lg-3 col-md-6 col-sm-12" v-for="items in sponsorList" v-bind:key="items" :src="items" alt="" />
       </div>
     </div>
@@ -32,7 +32,7 @@ Official Government Institutions"
 @import '../assets/scss/styles.scss';
 
 section.sponsor {
-  .sponsor-list {
+  .sponsor__content {
     width: 100%;
     --bs-gutter-y: 24px;
     & > * {

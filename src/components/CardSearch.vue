@@ -7,7 +7,7 @@ defineProps(['badgeProps', 'titleProps', 'locateProps', 'imgProps']);
     <div class="card card-search">
       <img :src="imgProps" class="card-img-top card-img-search" alt="" />
       <span class="badge rounded-pill text-sm card-badge-search">{{ badgeProps }}</span>
-      <div class="card-body">
+      <div class="flex-column card-body">
         <h4 class="card-title card-title-search">{{ titleProps }}</h4>
         <p class="card-text card-locate-search">{{ locateProps }}</p>
         <a href="#" class="btn btn--primary btn-card-search">Learn More</a>
@@ -32,8 +32,6 @@ defineProps(['badgeProps', 'titleProps', 'locateProps', 'imgProps']);
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 
   .card-img-search {
-    // max-width: 257px;
-    // max-height: 190px;
   }
 
   .card-badge-search {
@@ -48,11 +46,7 @@ defineProps(['badgeProps', 'titleProps', 'locateProps', 'imgProps']);
 
   .card-body {
     padding: 0;
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
-    justify-content: center;
 
     .card-locate-search {
       color: $ntr300;
