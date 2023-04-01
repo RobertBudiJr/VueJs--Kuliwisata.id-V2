@@ -115,3 +115,12 @@ h4 {
   align-items: center;
   justify-content: center;
 }
+
+// V Lazy Image library styling
+.v-lazy-image {
+  filter: blur(10px);
+  transition: filter 0.7s;
+}
+.v-lazy-image-loaded {
+  filter: blur(0);
+}

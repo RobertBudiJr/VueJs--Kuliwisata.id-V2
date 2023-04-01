@@ -1,11 +1,13 @@
 <script setup>
-defineProps(['badgeProps', 'titleProps', 'locateProps', 'imgProps']);
+import VLazyImage from 'v-lazy-image';
+
+defineProps(['badgeProps', 'titleProps', 'locateProps', 'imgProps', 'imgLoadProps']);
 </script>
 
 <template>
   <div class="col-lg-3 col-md-6 col-sm-12">
     <div class="card card-search" v-motion-slide-visible-once-bottom>
-      <img :src="imgProps" class="card-img-top card-img-search" :alt="titleProps" />
+      <v-lazy-image :src="imgProps" :src-placeholder="imgLoadProps" :alt="titleProps" />
       <span class="badge rounded-pill text-sm card-badge-search">{{ badgeProps }}</span>
       <div class="flex-column card-body">
         <h4 class="card-title card-title-search">{{ titleProps }}</h4>
