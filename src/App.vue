@@ -3,6 +3,7 @@ import NavbarTop from './components/NavbarTop.vue';
 import HeroSection from './sections/HeroSection.vue';
 import SponsorSection from './sections/SponsorSection.vue';
 import RecSection from './sections/RecSection.vue';
+import PopularSection from './sections/PopularSection.vue';
 import NewsSection from './sections/NewsSection.vue';
 import FooterSection from './sections/FooterSection.vue';
 </script>
@@ -12,6 +13,7 @@ import FooterSection from './sections/FooterSection.vue';
   <HeroSection></HeroSection>
   <SponsorSection></SponsorSection>
   <RecSection></RecSection>
+  <PopularSection></PopularSection>
   <NewsSection></NewsSection>
   <FooterSection></FooterSection>
 </template>
