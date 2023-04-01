@@ -12,7 +12,7 @@ import CarouselSwiper from '../components/CarouselSwiper.vue';
       <HeaderTitle headerProps="Hot Food of The Month" subHeaderProps="We recommend you the best culinary delights every time, let's taste the local flavor" reverseProps="true" />
       <!-- Content -->
       <CarouselSwiper />
-      <a href="#" class="btn btn--primary btn-card-search">Explore More</a>
+      <a href="#" class="btn btn--primary btn-card-search" v-motion-pop-visible-once>Explore More</a>
     </div>
   </section>
   <!-- End Popular Section -->

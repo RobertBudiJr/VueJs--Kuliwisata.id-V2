@@ -21,7 +21,7 @@ Official Government Institutions"
       />
       <!-- Content -->
       <div class="row gy-1 sponsor__content">
-        <img class="col-lg-3 col-md-6 col-sm-12" v-for="items in sponsorList" v-bind:key="items" :src="items" alt="" />
+        <img class="col-lg-3 col-md-6 col-sm-12" v-for="items in sponsorList" v-bind:key="items" :src="items" alt="" v-motion-fade-visible-once />
       </div>
     </div>
   </section>

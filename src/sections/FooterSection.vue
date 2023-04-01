@@ -4,12 +4,12 @@
   <!-- Start Footer Section -->
   <footer class="footer">
     <div class="container container--gen flex-row container--footer">
-      <div class="flex-column footer__wrapper">
+      <div class="flex-column footer__wrapper" v-motion-fade-visible-once>
         <div class="footer__logo"></div>
         <p class="text-sm footer__desc">Kuliwisata is a web platform that provides assistance in obtaining popular information about interesting places and delicious culinary delights throughout Indonesia.</p>
       </div>
 
-      <div class="flex-column footer__wrapper">
+      <div class="flex-column footer__wrapper" v-motion-fade-visible-once>
         <p class="text-xl text-xl--lg">Pages</p>
         <ul class="footer__menus">
           <li><a href="#">Home</a></li>
@@ -19,7 +19,7 @@
         </ul>
       </div>
 
-      <div class="flex-column footer__wrapper">
+      <div class="flex-column footer__wrapper" v-motion-fade-visible-once>
         <p class="text-xl text-xl--lg">Service</p>
         <ul class="footer__menus">
           <li><a href="#">Information</a></li>
@@ -27,7 +27,7 @@
         </ul>
       </div>
 
-      <div class="flex-column footer__wrapper">
+      <div class="flex-column footer__wrapper" v-motion-fade-visible-once>
         <p class="text-xl text-xl--lg">Contact</p>
         <ul class="footer__menus">
           <li>
@@ -42,7 +42,7 @@
         </ul>
       </div>
 
-      <div class="flex-column footer__wrapper">
+      <div class="flex-column footer__wrapper" v-motion-fade-visible-once>
         <p class="text-xl text-xl--lg">Sosial media</p>
         <ul class="flex-row footer__menus">
           <li>

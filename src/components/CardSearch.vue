@@ -4,7 +4,7 @@ defineProps(['badgeProps', 'titleProps', 'locateProps', 'imgProps']);
 
 <template>
   <div class="col-lg-3 col-md-6 col-sm-12">
-    <div class="card card-search">
+    <div class="card card-search" v-motion-slide-visible-once-bottom>
       <img :src="imgProps" class="card-img-top card-img-search" :alt="titleProps" />
       <span class="badge rounded-pill text-sm card-badge-search">{{ badgeProps }}</span>
       <div class="flex-column card-body">

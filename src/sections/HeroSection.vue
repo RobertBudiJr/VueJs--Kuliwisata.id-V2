@@ -39,6 +39,7 @@ section.hero {
     border-radius: toRem(20);
     height: 583px;
     gap: toRem(16);
+    animation: fadeIn 0.4s ease-in;
 
     .gradient-white {
       position: absolute;

@@ -1,34 +1,4 @@
 // Animations
-// @keyframes rotate-text-up {
-//   0% {
-//     transform: translate3d(0, 80px, 0);
-//     opacity: 0;
-//   }
-
-//   20%,
-//   80% {
-//     transform: translate3d(0, 0, 0);
-//     opacity: 1;
-//   }
-
-//   100% {
-//     transform: translate3d(0, -40px, 0);
-//     opacity: 0;
-//   }
-// }
-
-// @keyframes fade-text-in {
-//   0% {
-//     opacity: 0;
-//     transform: translate3d(0, 80px, 0);
-//   }
-
-//   50%,
-//   100% {
-//     opacity: 1;
-//     transform: translate3d(0, 0, 0);
-//   }
-// }
 @-webkit-keyframes rotateWord {
   0% {
     opacity: 0;
@@ -112,5 +82,28 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+// Entry Animations
+@keyframes slideToBottom {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

@@ -12,11 +12,12 @@
     "bootstrap": "^5.2.3",
     "swiper": "^8.4.7",
     "vue": "^3.2.45",
-    "vue-awesome-swiper": "^5.0.1"
+    "vue-awesome-swiper": "^5.0.1",
+    "@vueuse/motion": "^2.0.0-beta.12",
+    "@vue/compiler-sfc": "^3.2.11"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vue/compiler-sfc": "^3.2.11",
     "sass": "^1.58.0",
     "sass-resources-loader": "^2.2.5",
     "vite": "^4.1.0"

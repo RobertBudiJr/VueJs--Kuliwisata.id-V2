@@ -45,6 +45,7 @@
   background-color: unset !important;
   margin-top: toRem(50);
   z-index: 99;
+  animation: slideToBottom 0.4s ease-in;
 
   .navbar-brand {
     padding: 0;

@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel-swipe">
+  <div class="carousel-swipe" v-motion-fade-visible-once>
     <swiper
       class="swiper"
       :modules="modules"

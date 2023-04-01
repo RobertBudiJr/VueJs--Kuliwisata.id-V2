@@ -9,12 +9,12 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex-column header" v-if="reverseProps === false">
+  <div class="flex-column header" v-if="reverseProps === false" v-motion-slide-visible-once-top>
     <p class="text-xl text-xl--md">{{ subHeaderProps }}</p>
     <h3>{{ headerProps }}</h3>
   </div>
 
-  <div class="flex-column header" v-else>
+  <div class="flex-column header" v-else v-motion-slide-visible-once-top>
     <h3>{{ headerProps }}</h3>
     <p class="text-xl text-xl--md">{{ subHeaderProps }}</p>
   </div>

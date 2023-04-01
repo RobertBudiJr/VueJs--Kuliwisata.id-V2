@@ -3,7 +3,7 @@
 <template>
   <!-- Start News Section -->
   <section class="news">
-    <div class="container container--gen">
+    <div class="container container--gen" v-motion-slide-visible-bottom>
       <div class="flex-column wrapper">
         <div class="flex-column news__header">
           <h3>Subscibe to Our Newsletter</h3>
