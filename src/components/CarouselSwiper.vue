@@ -26,34 +26,33 @@
         </div>
       </swiper-slide> -->
       <swiper-slide class="slide">
-        <img class="image-carousel" src="../assets/img/food-1.png" />
+        <img class="image-carousel" src="../assets/img/food-1.png" alt="Sate Klathak" />
         <div class="hover-content" style="display: none">
           <h4>Sate Klathak</h4>
           <p class="text-md">
-            Sate Klathak adalah makanan khas yang berasal dari Kabupaten Bantul berbahan dasar daging kambing. Dengan spesifikasi tusuk sate terbuat dari besi jeruji sepeda. Cara memasak dengan dibakar dan hanya diberi bumbu garam. Cara
-            penghidangannya setiap porsi atau menu umumnya terdiri dari 2 tusuk sate sampai 4 tusuk.
+            Sate Klathak is a specialty food originating from Bantul Regency made from mutton. With specifications of skewers made of iron bicycle spokes. The cooking method is grilled and only seasoned with salt. Each portion or menu
+            generally consists of 2 skewers to 4 skewers.
           </p>
         </div>
       </swiper-slide>
       <swiper-slide class="slide">
-        <img class="image-carousel" src="../assets/img/food-2.png" />
+        <img class="image-carousel" src="../assets/img/food-2.png" alt="Ayam Betutu" />
         <div class="hover-content" style="display: none">
           <h4>Ayam Betutu</h4>
           <p class="text-md">
-            Betutu adalah lauk yang terbuat dari ayam atau bebek yang utuh yang berisi bumbu, kemudian dipanggang dalam api sekam. Betutu ini telah dikenal di seluruh kabupaten di Bali. Betutu merupakan jenis makanan tradisional daerah Bali
-            yang bahan mentahnya berupa karkas utuh itik dan ayam. Kata betutu berasal dari kata tunu yang berarti bakar dan dirangkai dengan kata be yang berarti daging. Berdasarkan uraian tersebut betutu berarti daging yang dibakar. Ayam
-            betutu merupakan jenis lauk pauk yang dibuat dari daging ayam yang telah dibersihkan kemudian dibalurkan bumbu khas Bali yang dikenal dengan base genep di seluruh permukaan tubuh daging ayam dan sebagian lagi dimasukkan ke dalam
-            rongga abdomennya.
+            Betutu is a side dish made from a whole chicken or duck that is filled with spices, then roasted in a husk fire. Betutu is known throughout all regencies in Bali. Betutu is a type of traditional Balinese food whose raw
+            ingredients are whole carcasses of duck and chicken. The word betutu comes from the word tunu which means grilled and is coupled with the word be which means meat. Based on this description, betutu means grilled meat. Chicken
+            betutu is a type of side dish made from chicken meat that has been cleaned and then spread Balinese spices known as "base genep" over the entire surface of the chicken body and partly inserted into the abdominal cavity.
           </p>
         </div>
       </swiper-slide>
       <swiper-slide class="slide">
-        <img class="image-carousel" src="../assets/img/food-3.png" />
+        <img class="image-carousel" src="../assets/img/food-3.png" alt="Nasi Gandul" />
         <div class="hover-content" style="display: none">
           <h4>Nasi Gandul</h4>
           <p class="text-md">
-            Nasi Gandul adalah masakan khas yang berasal dari daerah Pati, Jawa Tengah, Indonesia yang sepintas mirip dengan Semur Daging dan Gulai. Nasi gandul sepintas mirip dengan perpaduan soto dan gule, berupa daging yang dengan kuah
-            yang berwarna kecoklatan dengan rasa gurih manis.
+            Nasi Gandul is a specialty dish originating from Pati, Central Java, Indonesia that is similar to Semur Daging and Gulai. Nasi gandul is similar to a combination of soto and gule, in the form of meat in a brownish sauce with a
+            sweet savory taste.
           </p>
         </div>
       </swiper-slide>
