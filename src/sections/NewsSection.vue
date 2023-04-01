@@ -55,10 +55,17 @@ section.news {
       width: 100%;
       gap: toRem(16);
       position: relative;
-      flex-wrap: wrap;
+
+      @include media-breakpoint-down(md) {
+        flex-wrap: wrap;
+      }
 
       .form-control {
         padding-left: toRem(64);
+
+        &::placeholder {
+          color: $ntr100;
+        }
       }
 
       .mail {
