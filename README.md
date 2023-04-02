@@ -1,7 +1,14 @@
-# Vue 3 + Vite
+# Kuliwisata.id V2
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Kuliwisata.id is website that provide information about Travel Destination, Food Culinary in Indonesia.
 
-## Recommended IDE Setup
+## Detail Project
+<li> Designed with Figma. </li>
+<li> Coded with Vue 3. </li>
+<li> ViteJs as package manager. </li>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## List of library used in this project
+<li> @vueuse/motion as Entry Animation library. https://motion.vueuse.org</li>
+<li> bootstrap 5 as component base. https://getbootstrap.com</li>
+<li> vue-awesome-swiper as carousel. https://github.surmon.me/vue-awesome-swiper</li>
+<li> v-lazy-image for better image loading. https://github.com/alexjoverm/v-lazy-image</li>
