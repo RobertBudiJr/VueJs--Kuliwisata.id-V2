@@ -41,6 +41,10 @@ section.hero {
     gap: toRem(16);
     animation: fadeIn 0.4s ease-in;
 
+    @include media-breakpoint-down(sm) {
+      border-radius: 0;
+    }
+
     .gradient-white {
       position: absolute;
       width: 100%;
